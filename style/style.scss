@@ -114,7 +114,7 @@ h3 {
 }
 
 .main {
-  height: 80%;
+  height: 85%;
   width: 100%;
   background: #f2ae4d;
   display: grid;
@@ -131,7 +131,7 @@ h3 {
 
   img {
     align-self: center;
-    justify-self: end;
+    justify-self: center;
     padding-right: 0.4rem;
   }
 }
@@ -140,7 +140,7 @@ h3 {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  height: 20vh;
+  height: 15vh;
 
   .logos-item {
     width: 33%;
@@ -156,4 +156,61 @@ h3 {
       color: #a1a1a1;
     }
   }
+}
+
+.products {
+  padding: 2rem 4rem;
+  background-color: #eeeeee;
+
+  .products-header {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .container-products {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .products-item {
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #ededed;
+
+      img {
+        width: 30vh;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h3 {
+        text-align: left;
+        padding-left: 1rem;
+      }
+
+      span {
+        padding-left: 1rem;
+        font-size: 18px;
+        color: #777777;
+        line-height: 21px;
+        width: 10rem;
+        display: block;
+      }
+    }
+  }
+}
+
+.products-footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
