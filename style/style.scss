@@ -6,6 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .body {
@@ -43,10 +44,35 @@ h3 {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   height: 2rem;
-  width: 11rem;
+  width: 12rem;
+  line-height: 18px;
+  letter-spacing: 2px;
   color: #eee;
   cursor: pointer;
   transition: 0.2s;
+  text-transform: uppercase;
+  overflow-y: hidden;
+
+  &:hover {
+    transform: translate(1.01px);
+  }
+}
+
+.btn-white {
+  background: #ffffff;
+  border-radius: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  height: 2rem;
+  line-height: 18px;
+  letter-spacing: 2px;
+  width: 8rem;
+  color: #3d5675;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+  overflow-y: hidden;
 
   &:hover {
     transform: translate(1.01px);
@@ -159,11 +185,12 @@ h3 {
 }
 
 .products {
-  padding: 2rem 4rem;
+  padding: 1rem 2rem 0 2rem;
   background-color: #eeeeee;
+  overflow-y: hidden;
 
   .products-header {
-    height: 3rem;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +202,7 @@ h3 {
   }
 
   .container-products {
-    height: 80vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -185,7 +212,7 @@ h3 {
       border: 1px solid #ededed;
 
       img {
-        width: 30vh;
+        width: 25vh;
         display: block;
         margin: 0 auto;
       }
@@ -208,9 +235,17 @@ h3 {
 }
 
 .products-footer {
-  height: 5rem;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+  span {
+    color: #a1a1a1;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-right: 2rem;
+    cursor: default;
+  }
 }
