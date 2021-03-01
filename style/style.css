@@ -675,5 +675,27 @@ h3 {
 
 .section-get-it .wrapper-btn-get-it .btn-white {
   width: 12rem;
+  margin-left: 1rem;
+}
+
+.footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: #f2f3f4;
+}
+
+.footer .container {
+  padding-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.footer .container .logo-footer {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=style.css.map */

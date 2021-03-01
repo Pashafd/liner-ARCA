@@ -555,6 +555,28 @@ h3 {
 
     .btn-white {
       width: 12rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: #f2f3f4;
+
+  .container {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: auto;
+
+    .logo-footer {
+      justify-self: center;
+    }
+
+    .wrapper-nav-footer {
+      
     }
   }
 }
