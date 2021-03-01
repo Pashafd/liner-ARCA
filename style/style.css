@@ -383,4 +383,54 @@ h3 {
           transform: translate(-50%, 0);
   margin: 3rem 0;
 }
+
+.advantage {
+  background-color: #eeeeee;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantage .container .title-advantage {
+  font-size: 32px;
+  line-height: 41px;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.advantage .container .wrapper-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantage .container .wrapper-advantage .item-advantage {
+  width: 25%;
+}
+
+.advantage .container .wrapper-advantage .item-advantage img {
+  width: 100%;
+}
+
+.advantage .container .wrapper-advantage .subtitle-advantage {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.36px;
+  color: #011f3a;
+}
+
+.advantage .container .wrapper-advantage .info-advantage {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #a1a1a1;
+}
 /*# sourceMappingURL=style.css.map */

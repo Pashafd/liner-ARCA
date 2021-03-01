@@ -318,3 +318,47 @@ h3 {
     margin: 3rem 0;
   }
 }
+
+.advantage {
+  background-color: #eeeeee;
+  overflow-y: hidden;
+  display: flex;
+
+  .container {
+    .title-advantage {
+      font-size: 32px;
+      line-height: 41px;
+      font-weight: bold;
+      padding-bottom: 2rem;
+    }
+
+    .wrapper-advantage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .item-advantage {
+        width: 25%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .subtitle-advantage {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.36px;
+        color: #011f3a;
+      }
+
+      .info-advantage {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #a1a1a1;
+      }
+    }
+  }
+}
