@@ -40,6 +40,11 @@ h3 {
   width: 13rem;
 }
 
+.container {
+  width: calc(100vw - 240px);
+  margin: auto;
+}
+
 .btn-primary {
   background: #3d5675;
   border-radius: 44px;
@@ -58,11 +63,6 @@ h3 {
   overflow-y: hidden;
 }
 
-.btn-primary:hover {
-  -webkit-transform: translate(1.01px);
-          transform: translate(1.01px);
-}
-
 .btn-white {
   background: #ffffff;
   border-radius: 44px;
@@ -79,11 +79,6 @@ h3 {
   transition: 0.2s;
   text-transform: uppercase;
   overflow-y: hidden;
-}
-
-.btn-white:hover {
-  -webkit-transform: translate(1.01px);
-          transform: translate(1.01px);
 }
 
 .header {
@@ -232,9 +227,12 @@ h3 {
 }
 
 .products {
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 0;
   background-color: #eeeeee;
   overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .products .products-header {
@@ -310,5 +308,79 @@ h3 {
   font-weight: bold;
   padding-right: 2rem;
   cursor: default;
+}
+
+.boxes {
+  background-color: #eeeeee;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boxes .container {
+  background-color: #72bda3;
+}
+
+.boxes .title-boxes {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  line-height: 41px;
+  padding: 2.5rem 0 2rem 0;
+}
+
+.boxes .wraper-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxes .wraper-boxes .item-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+}
+
+.boxes .wraper-boxes .item-boxes img {
+  background-color: transparent;
+}
+
+.boxes .wraper-boxes .item-boxes .subtitle-boxes {
+  font-size: 18px;
+  color: #011f3a;
+  text-align: center;
+  letter-spacing: 0.4px;
+  line-height: 23px;
+}
+
+.boxes .wraper-boxes .item-boxes .info-boxes {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #3d5675;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.boxes button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin: 3rem 0;
 }
 /*# sourceMappingURL=style.css.map */
