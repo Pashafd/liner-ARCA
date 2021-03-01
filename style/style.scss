@@ -61,6 +61,7 @@ h3 {
   transition: 0.2s;
   text-transform: uppercase;
   overflow-y: hidden;
+  border: 0;
 
   // &:hover {
   //   transform: translate(1.01px);
@@ -82,10 +83,30 @@ h3 {
   transition: 0.2s;
   text-transform: uppercase;
   overflow-y: hidden;
+  border: 0;
 
   // &:hover {
   //   transform: translate(1.01px);
   // }
+}
+
+.btn-grey {
+  background: #f2f2f2;
+  border-radius: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  height: 2rem;
+  line-height: 18px;
+  letter-spacing: 2px;
+  width: 8rem;
+  border: 0;
+  color: #3d5675;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .header {
@@ -479,6 +500,31 @@ h3 {
 
           .wrapper-content-profile-merchants {
             display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .wrapper-names-merchants {
+              width: 45%;
+
+              h3 {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #011f3a;
+                padding-left: 1rem;
+              }
+
+              span {
+                font-size: 15px;
+                font-weight: normal;
+                line-height: 24px;
+                color: #a1a1a1;
+                padding-left: 1rem;
+              }
+
+              button {
+              }
+            }
           }
         }
       }
