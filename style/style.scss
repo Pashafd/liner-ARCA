@@ -521,13 +521,40 @@ h3 {
                 color: #a1a1a1;
                 padding-left: 1rem;
               }
-
-              button {
-              }
             }
           }
         }
       }
+    }
+  }
+}
+
+.section-get-it {
+  height: 50vh;
+  width: 100vw;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title-get-it {
+    text-align: center;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 36px;
+    color: #011f3a;
+
+    padding-bottom: 2rem;
+  }
+
+  .wrapper-btn-get-it {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-white {
+      width: 12rem;
     }
   }
 }
