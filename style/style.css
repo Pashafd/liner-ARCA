@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 html {
   overflow-x: hidden;
 }
@@ -439,6 +440,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #eeeeee;
 }
 
 .request .container {
@@ -508,5 +510,78 @@ h3 {
 
 .request .container .request-item button {
   width: 70%;
+}
+
+.section-merchants {
+  height: 150vh;
+  width: 100vw;
+  background-color: #eeeeee;
+  font-family: 'Lato', sans-serif;
+}
+
+.section-merchants .container {
+  margin: 0 auto;
+  height: 100%;
+  background-color: white;
+}
+
+.section-merchants .container .rate-merchants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem;
+}
+
+.section-merchants .container .rate-merchants img {
+  width: 25%;
+}
+
+.section-merchants .container .wrapper-merchants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.section-merchants .container .wrapper-merchants:nth-child(3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.section-merchants .container .wrapper-merchants .wrapper-image-merchants {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.section-merchants .container .wrapper-merchants .wrapper-image-merchants img {
+  width: 50%;
+}
+
+.section-merchants .container .wrapper-merchants .comment-merchants {
+  width: 50%;
+  margin: 3rem;
+}
+
+.section-merchants .container .wrapper-merchants .comment-merchants .profile-merchants .text-merchants {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #011f3a;
+}
+
+.section-merchants .container .wrapper-merchants .comment-merchants .profile-merchants .wrapper-content-profile-merchants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

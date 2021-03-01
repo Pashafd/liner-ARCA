@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 html {
   overflow-x: hidden;
@@ -366,6 +367,7 @@ h3 {
 .request {
   overflow-y: hidden;
   display: flex;
+  background-color: #eeeeee;
 
   .container {
     display: flex;
@@ -418,6 +420,67 @@ h3 {
 
       button {
         width: 70%;
+      }
+    }
+  }
+}
+
+.section-merchants {
+  height: 150vh;
+  width: 100vw;
+  background-color: #eeeeee;
+  font-family: 'Lato', sans-serif;
+
+  .container {
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    .rate-merchants {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2rem;
+
+      img {
+        width: 25%;
+      }
+    }
+
+    .wrapper-merchants {
+      display: flex;
+      width: 100%;
+
+      &:nth-child(3) {
+        flex-direction: row-reverse;
+      }
+
+      .wrapper-image-merchants {
+        width: 50%;
+        display: flex;
+        padding: 1rem 0;
+
+        img {
+          width: 50%;
+        }
+      }
+
+      .comment-merchants {
+        width: 50%;
+        margin: 3rem;
+
+        .profile-merchants {
+          .text-merchants {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #011f3a;
+          }
+
+          .wrapper-content-profile-merchants {
+            display: flex;
+          }
+        }
       }
     }
   }
