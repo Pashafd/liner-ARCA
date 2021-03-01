@@ -686,6 +686,7 @@ h3 {
 
 .footer .container {
   padding-top: 2rem;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr 2fr;
@@ -697,5 +698,90 @@ h3 {
 .footer .container .logo-footer {
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.footer .container .wrapper-nav-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .container .wrapper-nav-footer .nav-footer {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #3d5675;
+  padding-right: 0.4rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: none;
+}
+
+.footer .container .wrapper-nav-footer a:hover {
+  color: #000000;
+}
+
+.footer .container .wrapper-nav-footer .contacts-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  padding-top: 0.5rem;
+}
+
+.footer .container .wrapper-nav-footer .contacts-footer img {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer .container .wrapper-nav-footer .contacts-footer img:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.footer .container .mail-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer .container .mail-footer .subtitle-mail-footer {
+  font-size: 15px;
+  line-height: 18px;
+  color: #3d5675;
+  font-weight: normal;
+  padding-bottom: 0.4rem;
+}
+
+.footer .container .mail-footer input {
+  border: 0;
+  outline: none;
+  border-radius: 34px;
+  background-color: #ffffff;
+  height: 1.5rem;
+  padding: 0 1rem;
+  width: 80%;
+}
+
+.footer .container .mail-footer button {
+  margin-top: 0.4rem;
+  text-transform: none;
+  letter-spacing: normal;
+  width: 8rem;
 }
 /*# sourceMappingURL=style.css.map */
