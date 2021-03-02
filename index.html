@@ -16,18 +16,31 @@
   <body>
     <header class="header sticky">
       <img src="./images/hear-logo.png" class="header-logo" />
-      <div class="wrapper-nav">
+
+      <svg
+        viewBox="0 0 100 40"
+        class="hamburger hidden-svg"
+        width="40"
+        height="30"
+      >
+        <rect width="100" height="10"></rect>
+        <rect y="20" width="100" height="10"></rect>
+        <rect y="40" width="100" height="10"></rect>
+      </svg>
+
+      <div class="wrapper-nav hidden">
         <a class="nav" href="#" target="_blank">Start your design</a>
         <a class="nav" href="#" target="_blank">All products</a>
         <a class="nav" href="#" target="_blank">Inspiration</a>
         <a class="nav" href="#" target="_blank">About</a>
-      </div>
-      <div class="header-acc">
-        <a class="nav" href="#" target="_blank">Account</a>
-        <img src="./images/shopingBagIcon.png" alt="" />
+
+        <div class="header-acc hidden">
+          <a class="nav" href="#" target="_blank">Account</a>
+          <img src="./images/shopingBagIcon.png" alt="" />
+        </div>
       </div>
     </header>
-    <section class="section">
+    <section class="section section-main">
       <div class="main">
         <div class="main-info grid">
           <h1>Fast and easy custom boxes your customers will love</h1>

@@ -1,8 +1,11 @@
-const header = document.querySelector('.header');
-const headerHeight = header.scrollHeight;
+const hamburger = document.querySelector('.hamburger');
+const wrapperNav = document.querySelector('.wrapper-nav');
+const headerAcc = document.querySelector('.header-acc');
 
-console.log(headerHeight);
+function showNav() {
+  wrapperNav.classList.toggle('hidden');
+  headerAcc.classList.toggle('hidden');
+}
 
-document.addEventListener('scroll', (e) => {
-  console.dir(e);
-});
+hamburger.addEventListener('click', showNav);
+hamburger.addEventListener('touch', showNav);

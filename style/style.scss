@@ -20,7 +20,7 @@ html {
 }
 
 section {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 }
 
@@ -112,11 +112,16 @@ h3 {
 .sticky {
   position: sticky !important;
   top: 0;
-  min-height: 60px;
+  min-height: 10vh;
+  z-index: 99 !important;
+}
+
+.hidden {
+  display: block;
 }
 
 .header {
-  height: 60px;
+  height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -172,13 +177,18 @@ h3 {
   }
 }
 
+.section-main {
+  height: 90vh !important;
+  position: relative;
+}
+
 .main {
-  height: 85%;
+  height: calc(100% - 60px);
   width: 100%;
   background: #f2ae4d;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-row: 1fr;
+  grid-row: auto;
 
   .main-info {
     align-self: center;
@@ -199,7 +209,11 @@ h3 {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  height: 15vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
 
   .logos-item {
     width: 33%;
@@ -450,7 +464,7 @@ h3 {
 
 .section-merchants {
   width: 100vw;
-  height: 200vh;
+  height: 180vh;
   background-color: #eeeeee;
   font-family: 'Lato', sans-serif;
 
@@ -538,7 +552,7 @@ h3 {
 }
 
 .section-get-it {
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   background-color: #eeeeee;
   display: flex;
@@ -654,13 +668,17 @@ h3 {
   }
 }
 
+.hidden-svg {
+  display: none;
+}
+
 @media (max-width: 1100px) {
-  section {
-    height: 100%;
+  .section {
+    height: 90vh;
   }
 
   .container {
-    width: calc(100vw - 120px);
+    width: 90%;
   }
 
   .main {
@@ -681,13 +699,28 @@ h3 {
       }
       button {
         margin: 0 auto;
-        transform: translateX(50%);
+        transform: translateX(30%);
+        padding: 4px;
       }
     }
   }
 
+  .products-item {
+    img {
+      width: 20vh !important;
+    }
+  }
+
+  .products-header {
+    padding: 0 1rem;
+  }
+
   .section-merchants {
-    height: 150vh;
+    height: 143vh !important;
+
+    .wrapper-names-merchants {
+      width: 40% !important;
+    }
   }
 
   .container-products {
@@ -704,5 +737,107 @@ h3 {
     button {
       margin: 1rem 0;
     }
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 100% !important;
+  }
+
+  .wrapper-advantage {
+    padding: 0 1rem;
+  }
+
+  .request-item {
+    margin: 0 1rem !important;
+  }
+
+  .products-item {
+    img {
+      width: 15vh !important;
+    }
+  }
+
+  .section-main {
+    height: 95vh !important;
+  }
+
+  .header {
+    height: 5vh !important;
+
+    .nav {
+      margin: 0 0.3rem;
+    }
+  }
+
+  .sticky {
+    min-height: 5vh;
+  }
+
+  .comment-merchants {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 635px) {
+  body {
+    width: 100% !important;
+  }
+
+  .hidden-svg {
+    display: block !important;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .main {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+
+    .btn-primary {
+      transform: none !important;
+    }
+  }
+
+  .wrapper-nav {
+    position: absolute;
+    right: 0;
+    top: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between !important;
+    height: 9rem;
+    width: 10rem;
+    background-color: #ffffff;
+    animation: slide 0.2s;
+
+    a:nth-child(1) {
+      padding-bottom: 0.2rem;
+    }
+
+    a:last-child() {
+      padding-top: 0.2rem;
+    }
+  }
+
+  .header-acc {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    padding: 0 !important;
+  }
+}
+
+@keyframes slide {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 90%;
   }
 }
