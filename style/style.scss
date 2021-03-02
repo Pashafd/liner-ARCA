@@ -120,6 +120,7 @@ h3 {
   background-color: rgb(255, 255, 255);
   transition: 0.2s ease;
   box-shadow: 0px 14px 44px rgba(84, 84, 84, 0.25);
+  padding: 0 24px;
 
   .nav {
     font-size: 14px;
@@ -146,9 +147,8 @@ h3 {
     }
   }
 
-  .heaer-logo {
+  .header-logo {
     cursor: default;
-    padding: 0 24px;
     background: transparent;
   }
 
@@ -163,10 +163,6 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    i {
-      transform: rotateY(180deg);
-    }
   }
 }
 
@@ -447,14 +443,24 @@ h3 {
 }
 
 .section-merchants {
-  height: 150vh;
   width: 100vw;
+  height: 200vh;
   background-color: #eeeeee;
   font-family: 'Lato', sans-serif;
 
-  .container {
+  .title-merchants {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0 3rem 0;
     margin: 0 auto;
-    height: 100%;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+    color: #011f3a;
+  }
+
+  .container {
+    margin: auto;
     background-color: rgb(255, 255, 255);
 
     .rate-merchants {
@@ -462,22 +468,16 @@ h3 {
       align-items: center;
       justify-content: space-around;
       padding: 2rem;
-
-      img {
-        width: 25%;
-      }
     }
 
     .wrapper-merchants {
       display: flex;
-      width: 100%;
 
       &:nth-child(3) {
         flex-direction: row-reverse;
       }
 
       .wrapper-image-merchants {
-        width: 50%;
         display: flex;
         padding: 1rem 0;
 
@@ -487,10 +487,14 @@ h3 {
       }
 
       .comment-merchants {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50%;
-        margin: 3rem;
 
         .profile-merchants {
+          width: 90%;
+
           .text-merchants {
             font-weight: normal;
             font-size: 24px;
@@ -504,8 +508,6 @@ h3 {
             justify-content: center;
 
             .wrapper-names-merchants {
-              width: 45%;
-
               h3 {
                 font-weight: normal;
                 font-size: 18px;
