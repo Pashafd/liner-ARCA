@@ -104,6 +104,13 @@ h3 {
   overflow-x: hidden;
 }
 
+.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  min-height: 60px;
+}
+
 .header {
   height: 60px;
   width: 100vw;
@@ -765,6 +772,7 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  justify-self: flex-end;
 }
 
 .footer .container .mail-footer .subtitle-mail-footer {
@@ -790,5 +798,49 @@ h3 {
   text-transform: none;
   letter-spacing: normal;
   width: 8rem;
+}
+
+@media (max-width: 1100px) {
+  section {
+    height: 100%;
+  }
+  .container {
+    width: calc(100vw - 120px);
+  }
+  .main .main-img {
+    width: 80%;
+  }
+  .main .main-info {
+    width: 80%;
+    margin: 0;
+    padding-left: 20px;
+  }
+  .main .main-info h1 {
+    width: 100%;
+  }
+  .main .main-info h3 {
+    width: 100%;
+  }
+  .main .main-info button {
+    margin: 0 auto;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .section-merchants {
+    height: 150vh;
+  }
+  .container-products {
+    height: auto !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    -ms-grid-rows: auto !important;
+        grid-template-rows: auto !important;
+  }
+  .boxes {
+    height: auto;
+  }
+  .request-item button {
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

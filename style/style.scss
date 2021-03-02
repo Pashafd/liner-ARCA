@@ -109,6 +109,12 @@ h3 {
   overflow-x: hidden;
 }
 
+.sticky {
+  position: sticky !important;
+  top: 0;
+  min-height: 60px;
+}
+
 .header {
   height: 60px;
   width: 100vw;
@@ -618,6 +624,7 @@ h3 {
       display: flex;
       flex-direction: column;
       justify-content: start;
+      justify-self: flex-end;
 
       .subtitle-mail-footer {
         font-size: 15px;
@@ -643,6 +650,59 @@ h3 {
         letter-spacing: normal;
         width: 8rem;
       }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  section {
+    height: 100%;
+  }
+
+  .container {
+    width: calc(100vw - 120px);
+  }
+
+  .main {
+    .main-img {
+      width: 80%;
+    }
+
+    .main-info {
+      width: 80%;
+      margin: 0;
+      padding-left: 20px;
+
+      h1 {
+        width: 100%;
+      }
+      h3 {
+        width: 100%;
+      }
+      button {
+        margin: 0 auto;
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  .section-merchants {
+    height: 150vh;
+  }
+
+  .container-products {
+    height: auto !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto !important;
+  }
+
+  .boxes {
+    height: auto;
+  }
+
+  .request-item {
+    button {
+      margin: 1rem 0;
     }
   }
 }
